@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <meta charset="utf-8" />
-        <title>ClassyLoader jQuery plugin | vox.SPACE</title>
+        <title>ClassyLoader jQuery plugin</title>
         <link rel="stylesheet" href="css/documentation.css" />
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.classyloader.min.js"></script>
@@ -17,11 +17,6 @@
                             <h1>ClassyLoader<br><small>Beautiful loaders? Hell yea!</small></h1>
                         </div>
                     </div>
-                    <ul class="breadcrumb breadcrumb-top">
-                        <li><a href="https://vox.space/"><i class="fa fa-home"></i> vox.SPACE</a></li>
-                        <li><a href="https://vox.space/?section=4">jQuery plugins</a></li>
-                        <li>ClassyLoader</li>
-                    </ul>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="block">
@@ -29,7 +24,7 @@
                                     <h2>Introduction</h2>
                                 </div>
                                 <div class="clearfix">
-                                    <p>ClassyLoader is a <a href="http://www.jquery.com">jQuery</a> plugin written by <a href="https://vox.space">Marius Stanciu - Sergiu</a>, a plugin that lets your add beautiful and animated loaders to your website.</p>
+                                    <p>ClassyLoader is a <a href="http://www.jquery.com">jQuery</a> plugin that lets your add beautiful and animated loaders to your website.</p>
                                     <ul>
                                         <li>Beautifully animated</li>
                                         <li>Cross-browser compatible</li>
@@ -38,13 +33,13 @@
                                         <li>Easy to customize</li>
                                     </ul>
                                     <p>
-                                        <a href="/files/jquery-classyloader.zip" class="btn btn-primary">
+                                        <a href="https://github.com/kab91/jquery-classyloader/archive/master.zip" class="btn btn-primary">
                                             <i class="fa fa-folder-open"></i> Download it
                                         </a>
                                     </p>
                                     <div class="alert alert-info">
                                         <h4><i class="fa fa-info-circle"></i> License</h4>
-                                        This jQuery plugin is distributed under the <a href="https://vox.space/LICENSE-MIT">MIT license</a>. Enjoy!
+                                        This jQuery plugin is distributed under the <a href="https://andy.su/classyloader/LICENSE-MIT">MIT license</a>. Enjoy!
                                     </div>
                                 </div>
                             </div>
@@ -171,6 +166,9 @@
                                             <span class="label label-danger">fontStyle</span> - the font style, can be <span class="label label-success">italic</span>, <span class="label label-success">bold</span>, or any combination of them.
                                         </li>
                                         <li>
+                                            <span class="label label-danger">symbol</span> - the symbol after the number, defalut is <span class="label label-primary">%</span>.
+                                        </li>
+                                        <li>
                                             <h3>Methods</h3>
                                             <hr />
                                         </li>
@@ -241,7 +239,8 @@
                                                 percentage: 80,
                                                 lineWidth: 20,
                                                 start: 'top',
-                                                remainingLineColor: 'rgba(200,200,200,0.1)'
+                                                remainingLineColor: 'rgba(200,200,200,0.1)',
+                                                symbol: ''
                                             });
                                         });
                                     </script>
@@ -285,7 +284,8 @@
     percentage: 80,
     lineWidth: 20,
     start: 'top',
-    remainingLineColor: 'rgba(200,200,200,0.1)'
+    remainingLineColor: 'rgba(200,200,200,0.1)',
+    symbol: ''
 });</pre>
                                 </div>
                             </div>
@@ -294,7 +294,7 @@
                 </div>
                 <footer class="clearfix">
                     <div class="pull-right">
-                        <span>2005 - 2016</span> © <a href="https://vox.space" target="_blank">vox.SPACE</a>
+                        <span>2017</span> © <a href="https://andy.su" target="_blank">andy.su</a>
                     </div>
                 </footer>
             </div>

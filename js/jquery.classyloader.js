@@ -1,11 +1,8 @@
 /*!
  * jQuery ClassyLoader
- * vox.SPACE
- *
- * Written by Marius Stanciu - Sergiu <marius@vox.space>
- * Licensed under the MIT license https://vox.SPACE/LICENSE-MIT
+ * https://andy.su
  * Version 1.2.3
- *
+ * https://github.com/kab91/jquery-classyloader
  */
 
 (function($) {
@@ -31,7 +28,8 @@
             lineColor: 'rgba(55, 55, 55, 1)',
             remainingLineColor: 'rgba(55, 55, 55, 0.4)',
             lineWidth: 5,
-            start: 'left'
+            start: 'left',
+            symbol: '%'
         };
         settings = $.extend({
         }, defaultSettings, settings);
@@ -52,7 +50,7 @@
             };
             ctx.scale(1, 1);
             ctx.lineWidth = settings.lineWidth;
-            ctx.strokeStyle = settings.lineColour;
+            ctx.strokeStyle = settings.lineColor;
             var l = function(s, u) {
                 s = s || f(a);
                 u = u || f(a + 1);
@@ -80,7 +78,7 @@
                         startPos = 0.5 * Math.PI;
                         break;
                     case 'right':
-                        startPos = 1 * Math.PI;
+                        startPos = Math.PI;
                         break;
                     case 'left':
                     default:
@@ -95,7 +93,7 @@
                     ctx.font = (settings.fontStyle !== '' ? settings.fontStyle + ' ' : '') + settings.fontSize + " " + settings.fontFamily;
                     ctx.textAlign = "center";
                     ctx.textBaseline = "middle";
-                    ctx.fillText(a + 1 + "%", hw, hh);
+                    ctx.fillText(a + 1 + settings.symbol, hw, hh);
                 }
             };
             setTimeout(function c() {
@@ -119,7 +117,7 @@
             var hh = r.height() / 2;
             ctx.scale(1, 1);
             ctx.lineWidth = settings.lineWidth;
-            ctx.strokeStyle = settings.lineColour;
+            ctx.strokeStyle = settings.lineColor;
             ctx.clearRect(0, 0, r.width(), r.height());
             ctx.strokeStyle = settings.lineColor;
             ctx.beginPath();
@@ -131,7 +129,7 @@
                 ctx.font = (settings.fontStyle !== '' ? settings.fontStyle + ' ' : '') + settings.fontSize + ' ' + settings.fontFamily;
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'middle';
-                ctx.fillText(settings.percentage + '%', hw, hh);
+                ctx.fillText(settings.percentage + settings.symbol, hw, hh);
             }
             if (settings.showRemaining === true) {
                 ctx.beginPath();

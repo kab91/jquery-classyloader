@@ -1,11 +1,10 @@
-** This library was authored by Marius Stanciu originally, I made a mirror of this package here because vox.space was down a few times and wanted to make sure there's a copy of it!
+ClassyLoader is a jQuery plugin that lets your add beautiful and animated loaders to your website.
 
-ClassySocial is a jQuery plugin that lets your add beautiful and animated
-loaders to your website.
+You can find documentation and examples here: https://andy.su/classyloader
 
 @name ClassyLoader
 @package jQuery plugin
-@author Marius Stanciu - Sergiu <marius@vox.space>
-@website https://vox.space/
+@author Andrew Kozlov <1607kab@gmail.com>
+@website https://andy.su/
 @version 1.2.3
-@license MIT https://vox.space/LICENSE-MIT
+@license MIT https://andy.su/classyloader/LICENSE-MIT
